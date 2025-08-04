@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Calendar from '@/components/calendar/Calendar';
 import styles from "./page.module.css";
 
