@@ -1,0 +1,32 @@
+.nav {
+  --gray-rgb: 0, 0, 0;
+  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
+  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+  font-family: var(--font-lato);
+  max-width: 1170px;
+  padding: 0;
+  margin: auto;
+}
+
+.containt {
+    display: flex;
+    align-items: center;
+}
+
+.lnk {
+    padding: 0 15px;
+    line-height: 41px;
+    font-weight: 600;
+}
+
+.lnk:hover{
+    color: white;
+    background-color: #f50;
+}
+
+@media (max-width: 600px) {
+    .nav{
+        padding: 10px;
+        max-width: 100%;
+    }
+}
