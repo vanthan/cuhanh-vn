@@ -2,7 +2,7 @@
 
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
-import interactionPlugin from '@fullcalendar/interaction';
+import interactionPlugin, { DateClickArg }from '@fullcalendar/interaction';
 
 // Props của component, nhận vào một danh sách các sự kiện
 interface CalendarProps {
@@ -11,8 +11,7 @@ interface CalendarProps {
 
 export default function Calendar({ events }: CalendarProps) {
   // Xử lý khi người dùng click vào một ngày
-  const handleDateClick = (arg: any) => {
-    alert('Bạn đã click vào ngày: ' + arg.dateStr);
+  const handleDateClick = (event: DateClickArg) => {
   };
 
   return (
