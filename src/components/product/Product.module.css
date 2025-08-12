@@ -1,0 +1,40 @@
+/* components/ContentTabs.module.css */
+
+.tabsContainer {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.tabButtons {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fafafa;
+}
+
+.tabButtons button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #555;
+  border-bottom: 2px solid transparent; /* Đường gạch chân ẩn */
+  transition: all 0.2s ease-in-out;
+}
+
+.tabButtons button:hover {
+  color: #000;
+}
+
+/* Kiểu của tab đang được chọn */
+.tabButtons button.active {
+  color: #0070f3; /* Màu xanh dương đặc trưng */
+  border-bottom: 2px solid #0070f3;
+}
+
+.tabContent {
+  padding: 24px;
+}
