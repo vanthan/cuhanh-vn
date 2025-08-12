@@ -6,16 +6,11 @@ import Image, { type StaticImageData } from 'next/image';
 
 import caPheDenImage from './images/Ca-phe-Den.png';
 
-
-// Định nghĩa cấu trúc cho một tab
-interface TabContent {
-  title: string;
-  content: ProductItem[]; // content là một mảng các ProductItem
+interface ProductItem {
+  name: string;
+  price: number;
+  imagePath: StaticImageData;
 }
-
-// Định nghĩa cấu trúc cho toàn bộ dữ liệu tab
-// Sử dụng Record<TabKey, TabContent> để code chặt chẽ hơn
-type TabData = Record<TabKey, TabContent>;
 
 const tabData = {
   drinks: {
@@ -44,11 +39,7 @@ const tabData = {
   }
 };
 
-interface ProductItem {
-  name: string;
-  price: number;
-  imagePath: StaticImageData;
-}
+
 
 type TabKey = keyof typeof tabData;
 
