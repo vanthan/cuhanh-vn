@@ -82,3 +82,16 @@
   font-weight: bold;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .productList {  
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Lưới tự động co dãn */
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .productList {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Lưới tự động co dãn */
+  }
+}
