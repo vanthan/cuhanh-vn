@@ -11,7 +11,7 @@ const geistLato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Cu Hanh",
+  title: "Trang chủ",
   description: "",
 };
 

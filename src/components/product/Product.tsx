@@ -5,7 +5,6 @@ import styles from './Product.module.css';
 import Image, { type StaticImageData } from 'next/image';
 
 import caPheDenImage from './images/Ca-phe-Den.png';
-import suaChuaTranChauImage from './images/suachuatranchau.png';
 
 
 // Định nghĩa cấu trúc cho một tab
