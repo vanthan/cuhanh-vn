@@ -1,8 +1,3 @@
-:root {
-    --header-bottom-cl:#203c8e;
-    --main-header-bottom-cl:#f50
-}
-
 .nav {
   font-family: var(--font-lato);
   max-width: 1170px;
